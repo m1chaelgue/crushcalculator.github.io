@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative; /* Add this to position the back button relative to the container */
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black; /* Ensure the heading text is visible */
+}
+
+.buttons button, .next-question-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.buttons button:hover, .next-question-button:hover {
+  background-color: #0056b3;
+}
+
+#backButton {
+  position: absolute; /* Position the back button absolutely within the container */
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px; /* Add padding to make the button bigger */
+  border-radius: 50%; /* Make the button a circle */
+  transition: background-color 0.3s ease; /* Add transition for smooth background color change */
+}
+
+#backButton:hover {
+  background-color: rgb(200, 200, 200); /* Change background color to grey on hover */
+}
+
+.back-icon {
+  width: 24px; /* Make the icon bigger */
+  height: 24px; /* Make the icon bigger */
+}
+
+.footer {
+  width: 100%; /* Ensure the footer takes the full width */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  padding: 20px;
+  text-align: center;
+  position: absolute; /* Position the footer absolutely within the container */
+  bottom: 0; /* Align the footer to the bottom of the container */
+}
+
+.about-button {
+  color: grey;
+  text-decoration: none;
+  font-size: 16px;
+  transition: text-decoration 0.3s ease; /* Add transition for smooth underline effect */
+}
+
+.about-button:hover {
+  text-decoration: underline;
+}
+
+.about-text {
+  color: grey; /* Ensure the paragraph text is visible */
+  font-size: 16px;
+  text-align: center;
+}
+
+.about-text a {
+  color: #007bff; /* Change the link color to a more noticeable one */
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Add transition for smooth color and underline effect */
+}
+
+.about-text a:hover {
+  color: #0056b3; /* Change the link color on hover */
+  text-decoration: underline;
+}
